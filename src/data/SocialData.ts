@@ -25,5 +25,10 @@ export const SocialLinks: Social[] = [
         name: 'Email',
         href: 'mailto:kai@coleridge.dev',
     },
-    
+
+    {
+        name: 'Discord',
+        href: 'https://discord.gg/4Z3Z9Z8',
+    }
+
 ];
