@@ -12,20 +12,20 @@ export default function Home() {
 
         <main className='container mx-auto flex flex-col items-start justify-start max-w-5xl pb-5'>
             <Navbar />    
-                <div className='flex flex-col items-start justify-start md:m-10 m-5'>
+                <div className='flex flex-col items-start justify-start m-10'>
               
                     <h1 className='md:text-5xl font-bold'>Hey I'm, Kai ✌️</h1>
-                    <p className='text-md text-gray-600 dark:text-gray-400 max-w-4xl mt-4'>
-                       
+                    <p className='text-md line text-gray-600 dark:text-gray-400 mt-5'>
+                      I'm a full stack developer from the UK. I'm currently studying Computer Science at the University of Birmingham. I'm passionate about building web applications and learning new technologies. I'm currently working on a few projects, one of which is a social media platform for developers. I'm also working on a few other projects, which I will be releasing soon.
                     </p>
 
-                    <h1 className='text-2xl font-bold'>What I do currently 💭</h1>
-                    <p className='text-md text-gray-600 dark:text-gray-400 max-w-4xl mt-4'>
-                      
+                    <h1 className='text-2xl font-bold'>What I Do 💭</h1>
+                    <p className='text-md text-gray-600 dark:text-gray-400 mt-2'>
+                    I'm passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
                     </p>
 
                     <h1 className='text-2xl font-bold'>Technologies💻</h1>
-                    <p className='text-md text-gray-600 dark:text-gray-400 max-w-4xl mt-4'>
+                    <p className='text-md text-gray-600 dark:text-gray-400 mt-2'>
                      
                     </p>
 
@@ -45,7 +45,7 @@ export default function Home() {
                     </div> 
 
                     <h1 className='text-2xl font-bold'>Projects🛠️</h1>
-                    <p className='text-md text-gray-600 dark:text-gray-400 max-w-4xl mt-4'>
+                    <p className='text-md text-gray-600 dark:text-gray-400 max-w-4xl mt-2'>
                       
                     </p>
 
