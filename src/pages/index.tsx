@@ -1,6 +1,4 @@
 import Navbar from '@/components/Nav'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Head from 'next/head'
 
 export default function Home() {
