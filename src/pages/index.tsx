@@ -10,7 +10,7 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className='container mx-auto flex flex-col items-start justify-start max-w-7xl pb-5'>
+        <main className='container mx-auto flex flex-col items-start justify-start max-w-5xl pb-5'>
             <Navbar />    
                 <div className='flex flex-col items-start justify-start md:m-10 m-5'>
               

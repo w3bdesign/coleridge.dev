@@ -3,8 +3,8 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-       <nav className="w-full sticky md:top-5 z-50 font-semibold px-5 py-3 md:mt-4 container mx-auto rounded-md backdrop-blur-lg">
-            <div className='text-md text-white md:space-x-4'>
+       <nav className="w-full sticky md:top-5 bg-slate-900 z-50 font-semibold px-3 py-1.5 md:mt-4 container mx-auto rounded-md backdrop-blur-lg">
+            <div className='text-sm text-slate-400 md:space-x-4'>
             <button className='font-extrabold text-lg rounded-full line-through px-5 py-1'>
                     <Link href='/'>
                        //
