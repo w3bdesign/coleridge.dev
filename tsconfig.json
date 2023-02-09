@@ -18,7 +18,10 @@
     "paths": {
       "@/*": ["./src/*"]
     }
+  
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/sendgrid.js", "src/pages/api/hello.js"],
   "exclude": ["node_modules"]
 }
+
+
