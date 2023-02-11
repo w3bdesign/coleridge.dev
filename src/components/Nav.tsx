@@ -17,11 +17,6 @@ const Navbar = () => {
                     </Link>
                 </button>
 
-                <button className='hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible invisible'>
-                    <Link href='/blog'>
-                        blog
-                    </Link>
-                </button>
 
                 <button className='hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible invisible'>
                     <Link href='/projects'>
