@@ -5,9 +5,8 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [success, setSuccess] = useState(false);
+;
 
-  
     const handleSubmit = e => {
         e.preventDefault();
         const data = {
@@ -16,9 +15,6 @@ const Contact = () => {
             message,
         };
         console.log(data);
-
-        //show success message after form submission
-        setSuccess(true);
 
 
     fetch('/api/contact', {
@@ -29,9 +25,7 @@ const Contact = () => {
         },
     });
 
-
 };
-
    
     return (
     <>
@@ -73,10 +67,12 @@ const Contact = () => {
     <div className="flex flex-col items-start justify-start m-10 gap-3">
     <label htmlFor="message">Message</label>
     <textarea 
+    value={message}
     id="message"
     typeof="text"
     rows={4}
     onChange={e => setMessage(e.target.value)}
+    required
     className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
     </div>
 
