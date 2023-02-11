@@ -1,29 +1,36 @@
 import React, { useState } from "react";
-import axios from "axios";
+
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [success, setSuccess] = useState(false);
 
-    const [inputData, setInputData] = useState({
-        name: "",
-        email: "",
-        message: "",
+  
+    const handleSubmit = e => {
+        e.preventDefault();
+        const data = {
+            name,
+            email,
+            message,
+        };
+        console.log(data);
+
+        //show success message after form submission
+        setSuccess(true);
+
+
+    fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json',
+        },
     });
 
-    const handleChange = (e: any) => {
-        setInputData({...inputData, [e.target.name]: e.target.value});
-    }
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-        axios.post("/api/send", inputData)
-        .then((res) => {
-            console.log(res);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-        alert("Message sent!");
-    }
+};
 
    
     return (
@@ -38,18 +45,17 @@ const Contact = () => {
 
 
 
-    <div className="font-bold text-slate-400 rounded-xl dark:bg-[#12181d]/60 px-4 w-full mx-auto">
+    <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 px-4 w-full mx-auto">
     
-    <form method="post" onSubmit={handleSubmit}>
+    <form>
     <div className="flex flex-col items-start justify-start m-10 gap-3">
     <label htmlFor="Name">Name</label>
     <input 
-     id="name"
-     type="name"
-     name="name"
-     onChange={handleChange}
-     required 
-     placeholder="John Appleseed"
+    id="name"
+    type="text"
+    value={name}
+    onChange={e => setName(e.target.value)}
+    required
      className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
     </div>
 
@@ -57,10 +63,9 @@ const Contact = () => {
     <label htmlFor="email">Email</label>
     <input 
     id="email"
-    type="email" 
-    name="email"
-    onChange={handleChange}
-     placeholder="johnappleseed@apple.com"
+    type="email"
+    value={email}
+    onChange={e => setEmail(e.target.value)}
      required
      className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
     </div>
@@ -69,17 +74,16 @@ const Contact = () => {
     <label htmlFor="message">Message</label>
     <textarea 
     id="message"
-    name="message"
-    onChange={handleChange}
-    required 
-    placeholder="Hi Kai, what's up?" 
+    typeof="text"
+    rows={4}
+    onChange={e => setMessage(e.target.value)}
     className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
     </div>
 
     <div className="flex flex-col items-end justify-end m-10 gap-3">
     <button 
+    onClick={handleSubmit}
     type="submit" 
-    onSubmit={handleSubmit}
     className="bg-indigo-600 text-white font-bold hover:bg-slate-700 rounded-lg px-5 py-2">Send ➤</button>
     </div>
 
