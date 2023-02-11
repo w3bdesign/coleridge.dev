@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TimeStatus = () => {
+const currentStatus = () => {
     const [time, setTime] = useState<string>("00:00:00 p.m.");
     const [awake, setAwake] = useState<boolean>(true);
 
@@ -31,4 +31,4 @@ const TimeStatus = () => {
     );
 };
 
-export default TimeStatus;
+export default currentStatus;
