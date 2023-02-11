@@ -57,7 +57,7 @@ const emailRegex = new RegExp(
     </div>
 
 
-    <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full mb-5  mx-auto">
+    <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
     
     <form>
     <div className="flex flex-col items-start justify-start m-10 gap-3">
@@ -87,6 +87,7 @@ const emailRegex = new RegExp(
     <div className="flex flex-col items-start justify-start m-10 gap-3">
     <label htmlFor="message">Message</label>
     <textarea 
+    maxLength={1000}
     value={message}
     id="message"
     typeof="text"
