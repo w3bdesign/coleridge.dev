@@ -30,8 +30,8 @@ const Navbar = () => {
                 </button>
 
                 <button className='hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible invisible'>
-                    <Link href='/contact'>
-                        contact
+                    <Link href='/talk'>
+                       talk
                     </Link>
                 </button>
 
