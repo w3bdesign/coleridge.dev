@@ -7,8 +7,6 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
     console.log(body);
     res.status(200).json({ status: 'Ok' });
     
-
-
     const message = `
      Name: ${body.name}\r\n
      Email: ${body.email}\r\n

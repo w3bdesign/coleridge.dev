@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import TimeComponent from "@/components/TimeComponent";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -29,14 +29,15 @@ const Contact = () => {
    
     return (
     <>
+
+   
      <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
 
 <div className='flex flex-col items-start justify-start leading-7 m-10 gap-3'>
     <h1>Give me a shout 📧</h1>
-    <p className="text-white">Feel free to reach out to me on any of the platforms below. I'm always open to new opportunities and collaborations.</p>
-    <p>It's currently <span className="font-bold">4:53pm.</span> for me, so I'm probably <span className="font-bold">awake.</span> I'll be in contact with you soon.</p>
+    
+    <TimeComponent />
     </div>
-
 
 
     <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 px-4 w-full mx-auto">
