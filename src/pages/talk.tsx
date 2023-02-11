@@ -25,12 +25,12 @@ const emailRegex = new RegExp(
         setEmail("");
         setMessage("");
 
-        if(!name || !email || !message) return setError("Please fill in all fields");
-        if(!emailRegex.test(email)) return setError("Please enter a valid email");
+        if(!name || !email || !message) return setError("❌ Please fill in all fields");
+        if(!emailRegex.test(email)) return setError("❌ Please enter a valid email");
 
         if(error) setError("");
 
-        if(name && email && message) setSuccess("Message sent successfully");
+        if(name && email && message) setSuccess("✅ Message sent successfully");
 
     
    
@@ -57,7 +57,7 @@ const emailRegex = new RegExp(
     </div>
 
 
-    <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
+    <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full mb-5  mx-auto">
     
     <form>
     <div className="flex flex-col items-start justify-start m-10 gap-3">
