@@ -4,8 +4,12 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { status: string; }): void; new(): any; }; }; }) => {
     const body = req.body;
-    console.log(body);
     res.status(200).json({ status: 'Ok' });
+
+    if (!body.name || !body.email || !body.message) {
+        return res.status(400).json({ status: 'Bad Request' });
+    }
+
     
     const message = `
 <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
