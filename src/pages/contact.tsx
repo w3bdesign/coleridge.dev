@@ -22,8 +22,8 @@ const Contact = () => {
         };
            
 
-        if (!name || !email || !message) return setError("❌ Please fill in all fields");
-        if (!emailRegex.test(email)) return setError("❌ Please enter a valid email");
+        if (!name || !email || !message) return setError("Please fill in all fields");
+        if (!emailRegex.test(email) ) return setError("Please enter a valid email");
         if (error) setError("");
         if (name && email && message) setSuccess("✅ Message sent successfully");
 
@@ -44,7 +44,7 @@ const Contact = () => {
     return (
         <>
             <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
-                <div className='flex flex-col items-start justify-start leading-7 m-10 gap-3'>
+                <div className='flex flex-col items-start justify-start leading-7 pt-5 m-5 gap-3 '>
                     <h1>Let's connect 💬</h1>
                     <TimeComponent />
                 </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 typeof="text"
                                 rows={4}
                                 onChange={e => setMessage(e.target.value)}
-                                placeholder="Hi, I'm Tim Cook and I'm the CEO of Apple."
+                                placeholder="Leave your message here."
                                 required
                                 className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
                         </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                             <button
                                 onClick={handleSubmit}
                                 type="submit"
-                                className="bg-indigo-600 text-white font-bold hover:bg-slate-700 rounded-lg px-5 py-2">Send ➤</button>
+                                className="bg-indigo-600 text-white font-bold hover:bg-slate-700 rounded-lg py-3">Send ➤</button>
                         </div>
                     </form>
                 </div>
