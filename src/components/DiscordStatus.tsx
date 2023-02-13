@@ -1,4 +1,4 @@
-import Link from 'next/link'
+
 import { useLanyard } from 'use-lanyard'
 
 const DISCORD_ID = '328282806327181322'
