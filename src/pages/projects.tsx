@@ -4,6 +4,7 @@ import Aos from "aos";
 
 const ProjectData = [
   {
+    id: 0,
     title: "coleridge.dev",
     description:
       "This website you are currently on. Built with Next.js, TailwindCSS, and TypeScript.",
@@ -11,12 +12,14 @@ const ProjectData = [
   },
 
   {
+    id: 1,
     title: "Vector",
     description: "a multi-purpose Discord bot for my server 🤖",
     href: "https://github.com/kaicoleridge/VecTor"
   },
 
   {
+    id: 2,
     title: "DoIt",
     description: "a minimal task app built with Swift 📝",
     href: "https://github.com/kaicoleridge/DoIt"
@@ -32,14 +35,13 @@ const projects = () => {
           <p className="text-md line text-gray-400  mt-5">
             Here are a couple of projects I&apos;ve worked on and am currently working on. This list
             will be updated as I work on more projects.
-            {ProjectData.map((project) => (
+            {ProjectData.map(({ id, title, description, href }) => (
               <div
                 className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 hover:border-2 border-b-gray-400 rounded-lg p-3"
-                key={"project.id"}
-              >
-                <p className="md:text-xl font-bold text-white">{project.title}</p>
-                <p className="font-normal">{project.description}</p>
-                <a href={project.href} target="_blank" rel="noreferrer" className="text-indigo-500">
+                key={id}>
+                <p className="md:text-xl font-bold text-white">{title}</p>
+                <p className="font-normal">{description}</p>
+                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500">
                   {" "}
                   View repo 🔗
                 </a>
