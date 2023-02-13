@@ -49,7 +49,7 @@ const Spotify = () => {
 
             <div className="text-green-500 text-lg font-semibold mt-5 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 rounded-lg border-4 border-green-400">
                 <img 
-                    src={user.spotify.album_art_url}
+                    src={user.spotify.album_art_url ?? ''}
                     className="w-[10rem] h-[6rem] md:h-[8rem] rounded-md mr-5 pointer-events-none"
                     alt={user.spotify?.album}
                 />
