@@ -1,7 +1,7 @@
 
 const about = () => {
     return (
-
+        <div data-aos="zoom-in">
         <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
         <div className='flex flex-col items-start justify-start leading-7 m-10'>
 
@@ -11,6 +11,7 @@ const about = () => {
             </p>
         </div>
         </main>
+        </div>
     );
 };
 export default about;

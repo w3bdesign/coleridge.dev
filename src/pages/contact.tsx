@@ -43,6 +43,7 @@ const Contact = () => {
 
     return (
         <>
+         <div data-aos="zoom-in">
             <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
                 <div className='flex flex-col items-start justify-start leading-7 pt-5 m-5 gap-3 '>
                     <h1>Get in touch 💬</h1>
@@ -98,7 +99,9 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
+                
             </main>
+            </div>
         </>
     )
 }
