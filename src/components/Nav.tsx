@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
-import 'react-tooltip/dist/react-tooltip.css'
-
 
 const Navbar = () => {
     return (
@@ -18,7 +15,6 @@ const Navbar = () => {
                     <Link href='/'>
                         about
                     </Link>
-                    <ReactTooltip anchorId="about" />
                 </button>
 
                 <button className='transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible'>
