@@ -4,7 +4,7 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { status: string; }): void; new(): any; }; }; }) => {
   const body = req.body;
-  res.status(200).json({ status: 'Ok' });
+
   const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
@@ -21,6 +21,7 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
 
   try {
     await mail.send(data);
+    res.status(200).json({ status: 'Ok' });
     return { success: true}
   }
   catch (error) {
