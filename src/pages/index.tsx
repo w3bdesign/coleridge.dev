@@ -5,7 +5,7 @@ import DiscordStatus from '@/components/DiscordStatus'
 import Location from '@/components/Location'
 import Birthday from '@/components/Birthday'
 import Link from 'next/link'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import "aos/dist/aos.css";
 import Aos from "aos"
 

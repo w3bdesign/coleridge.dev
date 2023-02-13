@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 const CurrentStatus = () => {
     const [time, setTime] = useState<string>("00:00:00 p.m.");
     const [awake, setAwake] = useState<boolean>(true);

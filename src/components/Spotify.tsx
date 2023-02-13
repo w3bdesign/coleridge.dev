@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useLanyard } from 'use-lanyard'
 
 const DISCORD_ID = '328282806327181322'
