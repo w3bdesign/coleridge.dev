@@ -6,11 +6,11 @@ const DISCORD_ID = "328282806327181322";
 const Spotify = () => {
   const { data: user } = useLanyard(DISCORD_ID);
 
-  // refresh component every 30seconds to update presence data
+  // refresh component every minute to update presence data
   useEffect(() => {
     const interval = setInterval(() => {
       window.location.reload();
-    }, 30000);
+    }, 60000);
     return () => clearInterval(interval);
   }, []);
 
