@@ -3,7 +3,7 @@ import { useLanyard } from 'use-lanyard'
 
 const DISCORD_ID = '328282806327181322'
 
-const Discord = () => {
+const DiscordStatus = () => {
     const { data: user } = useLanyard(DISCORD_ID) 
 
     if(user?.discord_status === 'offline') {
@@ -41,4 +41,4 @@ const Discord = () => {
     
 
 }
-export default Discord;
+export default DiscordStatus;

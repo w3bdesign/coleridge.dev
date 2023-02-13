@@ -27,7 +27,7 @@ const projects = () => {
             <div className='flex flex-col items-start justify-start leading-7 m-10'>
                 <h1 className='md:text-5xl font-bold'>Projects</h1>
                 <p className='text-md line text-gray-400  mt-5'>
-                    Here are a couple of projects I&aposve worked on and am currently working on. This list will be updated as I work on more projects.
+                    Here are a couple of projects I&apos;ve worked on and am currently working on. This list will be updated as I work on more projects.
 
 
                     {ProjectData.map((project) => (

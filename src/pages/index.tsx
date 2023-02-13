@@ -1,7 +1,7 @@
 import Navbar from '@/components/Nav'
 import Head from 'next/head'
 import SpotifyStatus from '@/components/Spotify'
-import Discord from '@/components/Discord'
+import DiscordStatus from '@/components/DiscordStatus'
 import Location from '@/components/Location'
 import Birthday from '@/components/Birthday'
 import Link from 'next/link'
@@ -30,24 +30,28 @@ export default function Home() {
 
                 <SpotifyStatus />
 
+              
+
                 <div className='flex flex-wrap flex-row justify-start md:grid grid-cols-3 gap-2'>
                 <Location />
                 <Link href="https://discord.com/invite/gFY6uHQPNB">
+
+                <DiscordStatus/>
                
                 </Link>
                 <Birthday />
                 </div>
             
                 
-                    <h1 className='md:text-7xl font-extrabold md:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>Hey I&aposm, Kai</h1>
+                    <h1 className='md:text-7xl font-extrabold md:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>Hey I&apos;m, Kai</h1>
                     <p className='text-md line text-gray-600 dark:text-gray-400 mt-5'>
-                      I&aposm a 22 year old full stack developer and CS student from the UK. I&aposm currently working on a few upcoming projects which I&aposll share soon. Other than coding I enjoy listening to music, watching films and travelling the world.
+                      I&apos;m a 22 year old full stack developer and CS student from the UK. I&apos;m currently working on a few upcoming projects which I&apos;ll share soon. Other than coding I enjoy listening to music, watching films and travelling the world.
                     </p>
 
                     <h1 className='text-2xl font-bold'>a deeper insight 💭</h1>
                     <p className='text-md text-gray-600 dark:text-gray-400 mt-2'>
-                    I have a dedication to technology since from as far as I can remember, being curious from a young age on how technology works leading into designing and building meaningful applications for users. I&aposm constantly trying to improve and expand my 
-                    knowledge in the tech industry, and I&aposm always looking for new opportunities to learn and grow. 
+                    I have a dedication to technology since from as far as I can remember, being curious from a young age on how technology works leading into designing and building meaningful applications for users. I&apos;m constantly trying to improve and expand my 
+                    knowledge in the tech industry, and I&apos;m always looking for new opportunities to learn and grow. 
                     </p>
 
                     <h1 className='text-2xl font-bold'>my tech stack 💻</h1>
