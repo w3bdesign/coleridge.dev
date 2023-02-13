@@ -281,7 +281,7 @@ export default function Home({ spotifyUser }: any) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const DISCORD_ID = "328282806327181322";
   const data = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
   const user = await data.json();
