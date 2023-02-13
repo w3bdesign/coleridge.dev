@@ -13,5 +13,6 @@
 #### Upcoming changes:
 - Implement light mode 
 - Develop about page 
+- Add top loading bar animation
 
 ##### Note: if the the homepage refreshes this is normal, this is because the hook needs to be re-rendered to fetch latest presence data. This will periodally run every 30seconds
