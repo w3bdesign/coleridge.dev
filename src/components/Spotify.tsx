@@ -8,11 +8,11 @@ const Spotify = () => {
     
     if(!user?.spotify === null) return null // if user is not listening to spotify, return null{
  
-    // refresh component every minute to update the song from discord
+    // refresh component every 30seconds to update presence data
     useEffect(() => {
         const interval = setInterval(() => {
             window.location.reload()
-        }, 20000)
+        }, 30000)
         return () => clearInterval(interval)
     }, [])
     
