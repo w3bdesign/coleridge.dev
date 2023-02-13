@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const CurrentStatus = () => {
+    const [time, setTime] = useState<string>("00:00:00 p.m.");
+    const [awake, setAwake] = useState<boolean>(true);
     function updateTime() {
       let currentTime = new Date().toLocaleString("en-GB", { hour: '2-digit', minute: '2-digit'});
       let ampm = (currentTime >= "12:00") ? "pm" : "am";
@@ -15,8 +17,7 @@ const CurrentStatus = () => {
         }, 1000);
         return () => clearInterval(interval)
     }, []);
-    const [time, setTime] = useState<string>("00:00:00 p.m.");
-    const [awake, setAwake] = useState<boolean>(true);
+  
  
     return (
         <p className="text-black/50 dark:text-white/50 text-md mt-2">
