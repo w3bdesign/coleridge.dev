@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "@/styles/design.css";
 import Navbar from "@/components/Nav";
 import type { AppProps } from "next/app";
