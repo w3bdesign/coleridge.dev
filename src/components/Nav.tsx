@@ -18,6 +18,7 @@ const Navbar = () => {
                     <Link href='/'>
                         about
                     </Link>
+                    <ReactTooltip anchorId="about" />
                 </button>
 
                 <button className='transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible'>

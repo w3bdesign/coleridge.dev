@@ -12,10 +12,7 @@ const CurrentStatus = () => {
       setAwake(currentTime >= "08:00" && currentTime <= "23:00");
     }
     useEffect(() => {
-        const interval = setInterval(() => {
-            updateTime();
-        }, 1000);
-        return () => clearInterval(interval)
+        updateTime();
     }, []);
   
  
