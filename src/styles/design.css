@@ -2,23 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(4,4,19);
-    background: -moz-linear-gradient(184deg, rgba(4,4,19,1) 0%, rgba(0,0,0,1) 100%, rgba(80,56,184,1) 100%);
-    background: -webkit-linear-gradient(184deg, rgba(4,4,19,1) 0%, rgba(0,0,0,1) 100%, rgba(80,56,184,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040413",endColorstr="#5038b8",GradientType=1);
-
+body {
+    background: rgb(4, 4, 19);
+    background: -moz-linear-gradient(184deg,
+            rgba(4, 4, 19, 1) 0%,
+            rgba(0, 0, 0, 1) 100%,
+            rgba(80, 56, 184, 1) 100%);
+    background: -webkit-linear-gradient(184deg,
+            rgba(4, 4, 19, 1) 0%,
+            rgba(0, 0, 0, 1) 100%,
+            rgba(80, 56, 184, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040413", endColorstr="#5038b8", GradientType=1);
 }
 
-svg{
-    color:white;
+svg {
+    color: white;
 }
 
-h1{
+h1 {
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -26,10 +31,10 @@ h1{
     margin-top: 2rem;
 }
 
-h3{
+h3 {
     color: azure;
 }
 
-p{
-    color: gray
+p {
+    color: gray;
 }
