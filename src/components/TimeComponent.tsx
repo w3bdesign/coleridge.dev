@@ -9,7 +9,7 @@ const CurrentStatus = () => {
     }
     useEffect(() => {
         updateTime();
-    }, []);
+    }, [updateTime]);
     const [time, setTime] = useState<string>("00:00:00 p.m.");
     const [awake, setAwake] = useState<boolean>(true);
  
