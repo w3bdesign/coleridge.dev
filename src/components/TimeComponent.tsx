@@ -3,7 +3,8 @@ const CurrentStatus = () => {
     function updateTime() {
       let currentTime = new Date().toLocaleString("en-GB", { hour: '2-digit', minute: '2-digit'});
       let ampm = (currentTime >= "12:00") ? "pm" : "am";
-      setTime(currentTime + ampm)
+      setTime(currentTime + ampm);
+      setTimeout(updateTime, 60 * 1000);
       setAwake(currentTime >= "08:00" && currentTime <= "23:00");
     }
     useEffect(() => {
