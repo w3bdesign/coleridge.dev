@@ -6,6 +6,7 @@ const DISCORD_ID = '328282806327181322'
 const Spotify = () => {
     const { data: user } = useLanyard(DISCORD_ID)
     
+    if(!user?.spotify === null) return null // if user is not listening to spotify, return null{
  
     // refresh component every minute to update the song from discord
     useEffect(() => {
