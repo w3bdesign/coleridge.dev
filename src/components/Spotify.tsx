@@ -1,5 +1,6 @@
 import React from "react";
 
+// TODO: Add proper Typescript types here
 const Spotify = ({ spotifyUser }: any) => {
   if (!spotifyUser?.spotify) {
     return (
