@@ -1,11 +1,20 @@
-const mail = require('@sendgrid/mail');
+const mail = require("@sendgrid/mail");
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default async (req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { status: string; }): void; new(): any; }; }; }) => {
+export default async (
+  req: { body: any },
+  res: {
+    status: (arg0: number) => {
+      (): any;
+      new (): any;
+      json: { (arg0: { status: string }): void; new (): any };
+    };
+  }
+) => {
   const body = req.body;
-  await res.status(200).json({ status: 'Ok' });
-  
+  await res.status(200).json({ status: "Ok" });
+
   const message = `
 <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
   <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
@@ -39,12 +48,12 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
 
   const data = {
     to: process.env.EMAIL_ID,
-    from: 'kai@coleridge.dev',
-    subject: 'New message from contact form',
+    from: "kai@coleridge.dev",
+    subject: "New message from contact form",
     text: message,
-    html: message.replace(/\r\n/g, '<br>'),
+    html: message.replace(/\r\n/g, "<br>")
   };
 
   await mail.send(data);
-  res.status(200).json({ status: 'Ok' });
+  res.status(200).json({ status: "Ok" });
 };
