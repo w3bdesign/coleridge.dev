@@ -6,11 +6,6 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
   const body = req.body;
   res.status(200).json({ status: 'Ok' });
   
-  if (!body.name || !body.email || !body.message) {
-    return res.status(400).json({ status: 'Bad Request' });
-  }
-
-
   const message = `
 <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
   <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
@@ -51,6 +46,5 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
   };
 
   await mail.send(data);
-
   res.status(200).json({ status: 'Ok' });
 };
