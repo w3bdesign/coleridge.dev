@@ -45,7 +45,7 @@ const Contact = () => {
         <>
             <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
                 <div className='flex flex-col items-start justify-start leading-7 pt-5 m-5 gap-3 '>
-                    <h1>Let's connect 💬</h1>
+                    <h1>Get in touch 💬</h1>
                     <TimeComponent />
                 </div>
                 <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
@@ -79,23 +79,22 @@ const Contact = () => {
                                 value={message}
                                 id="message"
                                 typeof="text"
-                                rows={4}
                                 onChange={e => setMessage(e.target.value)}
                                 placeholder="Leave your message here."
                                 required
                                 className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white" />
                         </div>
-                        <div className="flex flex-col items-start justify-start m-10">
-                            <p className="text-red-500">{error}</p>
-                        </div>
-                        <div className="flex flex-col items-start justify-start m-10">
-                            <p className="text-green-500">{success}</p>
-                        </div>
                         <div className="flex flex-col itemscen justify-center m-10 gap-3">
                             <button
                                 onClick={handleSubmit}
                                 type="submit"
-                                className="bg-indigo-600 text-white font-bold hover:bg-slate-700 rounded-lg py-3">Send ➤</button>
+                                className="bg-indigo-600 text-white font-bold transition ease-in-out hover:bg-slate-700 rounded-lg py-3 ">Send ➤</button>
+                        </div>
+                        <div className="flex flex-col items-center justify-center m-10">
+                            <p className="text-red-500">{error}</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center m-10">
+                            <p className="text-green-500">{success}</p>
                         </div>
                     </form>
                 </div>
