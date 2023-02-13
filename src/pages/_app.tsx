@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "@/styles/design.css";
-import Layout from "@/components/Layout";
+import Navbar from "@/components/Nav";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Layout />
+      <Navbar />
       <Component {...pageProps} />
       <Head>
         <title>Kai Coleridge</title>
