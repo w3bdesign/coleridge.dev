@@ -26,7 +26,7 @@ const projects = () => {
     return (
 
         <div data-aos="zoom-in">
-        <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
+        <div className='container mx-auto flex flex-col items-start justify-start max-w-3xl'>
             <div className='flex flex-col items-start justify-start leading-7 m-10'>
                 <h1 className='md:text-5xl font-bold'>Projects</h1>
                 <p className='text-md line text-gray-400  mt-5'>
@@ -43,7 +43,7 @@ const projects = () => {
                     }
                 </p>
             </div>
-        </main>
+        </div>
         </div>
     );
 };
