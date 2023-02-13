@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TimeComponent from "@/components/TimeComponent";
+/*import TimeComponent from "@/components/TimeComponent";*/
 
 const Contact = () => {
     const [name, setName] = useState("");
