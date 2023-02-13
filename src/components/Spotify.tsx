@@ -7,11 +7,11 @@ const Spotify = () => {
     const { data: user } = useLanyard(DISCORD_ID)
     
  
-    // refresh component every minute to update the song from discord
+    // refresh component every 30seconds to update presence data
     useEffect(() => {
         const interval = setInterval(() => {
             window.location.reload()
-        }, 20000)
+        }, 30000)
         return () => clearInterval(interval)
     }, [])
     
