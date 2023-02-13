@@ -7,12 +7,13 @@ const Spotify = () => {
   const { data: user } = useLanyard(DISCORD_ID);
 
   // refresh component every minute to update presence data
-  useEffect(() => {
+  /*useEffect(() => {
     const interval = setInterval(() => {
       window.location.reload();
     }, 60000);
     return () => clearInterval(interval);
   }, []);
+  */
 
   if (!user?.spotify) {
     return (
