@@ -13,4 +13,3 @@
 #### Upcoming changes:
 - Implement light mode 
 - Develop about page 
-- Tidy up code
