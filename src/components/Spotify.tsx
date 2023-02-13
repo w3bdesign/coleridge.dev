@@ -1,8 +1,13 @@
 import React from "react";
+import {useLanyardWS } from "use-lanyard";
 
 // TODO: Add proper Typescript types here
-const Spotify = ({ spotifyUser }: any) => {
-  if (!spotifyUser?.spotify) {
+
+const Spotify = () => {
+    const DISCORD_ID = "328282806327181322";
+    const data = useLanyardWS(DISCORD_ID)
+    
+  if (!data?.spotify) {
     return (
       <div>
         <p className="dark:text-gray-500 text-lg font-semibold mb-5 mt-5 flex items-center gap-2">
@@ -54,26 +59,27 @@ const Spotify = ({ spotifyUser }: any) => {
 
       <div className="text-green-500 text-lg font-semibold mt-5 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 rounded-lg border-4 border-green-400">
         <img
-          src={spotifyUser.spotify.album_art_url ?? ""}
+          src={data.spotify.album_art_url ?? ""}
           className="w-[10rem] h-[6rem] md:h-[8rem] rounded-md mr-5 pointer-events-none"
-          alt={spotifyUser.spotify?.album}
+          alt={data.spotify?.album}
         />
         <div className="w-full h-full flex flex-col items-start justify-center">
           i&apos;m listening to
           <a
-            href={`https://open.spotify.com/track/${spotifyUser?.spotify?.track_id}`}
+            href={`https://open.spotify.com/track/${data?.spotify?.track_id}`}
             target="_blank"
             rel="noreferrer"
             className="md:w-full w-60 font-medium text-gray-900 dark:text-[#e1eafd] hover:underline truncate">
-            {spotifyUser?.spotify?.song}
+            {data?.spotify?.song}
           </a>
           <p className="w-full text-gray-600 dark:text-[#cad2e0] font-normal text-sm truncate">
-            {spotifyUser?.spotify?.artist}
+            {data?.spotify?.artist}
           </p>
         </div>
       </div>
     </div>
   );
 };
+
 
 export default Spotify;

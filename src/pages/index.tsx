@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import Head from "next/head";
-import SpotifyStatus from "@/components/Spotify";
+import Spotify from "@/components/Spotify";
 import DiscordStatus from "@/components/DiscordStatus";
 import Location from "@/components/Location";
 import Birthday from "@/components/Birthday";
@@ -8,7 +7,7 @@ import Link from "next/link";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-export default function Home({ spotifyUser }: any) {
+export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
@@ -18,7 +17,7 @@ export default function Home({ spotifyUser }: any) {
       <div data-aos="zoom-in">
         <main className="container mx-auto flex flex-col items-start justify-start max-w-3xl mt-5">
           <div className="flex flex-col items-start justify-start leading-7 m-5">
-            <SpotifyStatus spotifyUser={spotifyUser} />
+            <Spotify/>
 
             <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-3 gap-2">
               <Location />
@@ -279,25 +278,4 @@ export default function Home({ spotifyUser }: any) {
       </div>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const DISCORD_ID = "328282806327181322";
-  const data = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
-  const user = await data.json();
-
-  if (!user) {
-    return;
-  }
-
-  return {
-    props: {
-      spotifyUser: user.data
-    },
-    
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 10, // In seconds
-  };
 }
