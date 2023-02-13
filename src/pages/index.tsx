@@ -5,8 +5,15 @@ import DiscordStatus from '@/components/Discord'
 import Location from '@/components/Location'
 import Birthday from '@/components/Birthday'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import "aos/dist/aos.css";
+import Aos from "aos"
 
+    
 export default function Home() {
+    useEffect(() => {
+        Aos.init({ duration: 300 });
+      }, []);
     return (
         <div>
             <Head>
@@ -15,6 +22,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+
+            <div data-aos="zoom-in">
             <main className='container mx-auto flex flex-col items-start justify-start max-w-3xl mt-5'>
 
                 <div className='flex flex-col items-start justify-start leading-7 m-5'>
@@ -74,6 +83,8 @@ export default function Home() {
 
 
         </div>
+        </div>
+    
     )
 
 }
