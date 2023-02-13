@@ -281,7 +281,7 @@ export default function Home({ spotifyUser }: any) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const DISCORD_ID = "328282806327181322";
   const data = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
   const user = await data.json();
@@ -294,5 +294,10 @@ export async function getServerSideProps() {
     props: {
       spotifyUser: user.data
     },
+    
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
   };
 }
