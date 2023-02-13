@@ -1,5 +1,4 @@
-
-![readme](https://user-images.githubusercontent.com/51129378/218394135-f03c829c-0cb3-481f-ac28-45740ea2631b.png)
+![201498294-16befa1d-2140-495e-bcde-622e8b6e3ead](https://user-images.githubusercontent.com/51129378/218395019-17120b26-ad67-46fd-8860-5a01fa3a7cc1.png)
 
 <h1>Coleridge.dev</h1>
 
