@@ -8,8 +8,6 @@ import Link from "next/link";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-import TestSpotify from "@/components/Spotify";
-
 export default function Home({ spotifyUser }: any) {
   useEffect(() => {
     Aos.init({ duration: 300 });
