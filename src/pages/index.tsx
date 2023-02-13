@@ -1,11 +1,10 @@
-import Navbar from '@/components/Nav'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import SpotifyStatus from '@/components/Spotify'
 import DiscordStatus from '@/components/DiscordStatus'
 import Location from '@/components/Location'
 import Birthday from '@/components/Birthday'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
 import "aos/dist/aos.css";
 import Aos from "aos"
 
