@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLanyard } from 'use-lanyard'
+import Image from 'next/image'
 
 const DISCORD_ID = '328282806327181322'
 
@@ -47,11 +48,10 @@ const Spotify = () => {
             </p>
 
             <div className="text-green-500 text-lg font-semibold mt-5 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 rounded-lg border-4 border-green-400" >
-                <img
-                
-                    src={user?.spotify?.album_art_url}
+                <Image 
+                    src={""}
                     className="w-[10rem] h-[6rem] md:h-[8rem] rounded-md mr-5 pointer-events-none"
-                    alt={user?.spotify?.album}
+                    alt={user.spotify?.album}
                 />
                 <div className="w-full h-full flex flex-col items-start justify-center">
                     i&aposm listening to
