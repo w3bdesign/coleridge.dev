@@ -13,3 +13,5 @@
 #### Upcoming changes:
 - Implement light mode 
 - Develop about page 
+
+##### Note: if the the homepage refreshes this is normal, this is because the component needs to be re-rendered to fetch latest presence data. This will periodally run every 30seconds
