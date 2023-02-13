@@ -49,7 +49,7 @@ export default function Home() {
                     </div>
 
 
-                    <h1 className='md:text-7xl font-extrabold md:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>Hey I&apos;m, Kai</h1>
+                    <h1 className='md:text-7xl text-4xl font-extrabold md:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500'>Hey I&apos;m, Kai</h1>
                     <p className='text-md line text-gray-600 dark:text-gray-400 mt-5'>
                         I&apos;m a 22 year old full stack developer and CS student from the UK. I&apos;m currently working on a few upcoming projects which I&apos;ll share soon. Other than coding I enjoy listening to music, watching films and travelling the world.
                     </p>
