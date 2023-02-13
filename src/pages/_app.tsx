@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import '@/styles/design.css'
 import Layout from '@/components/Layout'
 import type { AppProps } from 'next/app'
