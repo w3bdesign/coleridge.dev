@@ -8,13 +8,13 @@ const Spotify = () => {
     
  
     // refresh component every minute to update the song from discord
-    useEffect(() => {
+    /*useEffect(() => {
         const interval = setInterval(() => {
             window.location.reload()
         }, 20000)
         return () => clearInterval(interval)
     }, [])
-    
+    */
     
 
 
