@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
 const CurrentStatus = () => {
     function updateTime() {
       let currentTime = new Date().toLocaleString("en-GB", { hour: '2-digit', minute: '2-digit'});
@@ -27,4 +29,4 @@ const CurrentStatus = () => {
     );
 };
 
-export default CurrentStatus;
+export default dynamic (() => Promise.resolve(CurrentStatus), {ssr: false})

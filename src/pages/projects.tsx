@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 
 const ProjectData = [
     {
@@ -48,4 +49,5 @@ const projects = () => {
         </div>
     );
 };
-export default projects;
+
+export default dynamic (() => Promise.resolve(projects), {ssr: false})
