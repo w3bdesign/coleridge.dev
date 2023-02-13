@@ -8,8 +8,11 @@ const CurrentStatus = () => {
       setAwake(currentTime >= "08:00" && currentTime <= "23:00");
     }
     useEffect(() => {
-        updateTime();
-    }, [updateTime]);
+        const interval = setInterval(() => {
+            updateTime();
+        }, 1000);
+        return () => clearInterval(interval)
+    }, []);
     const [time, setTime] = useState<string>("00:00:00 p.m.");
     const [awake, setAwake] = useState<boolean>(true);
  
