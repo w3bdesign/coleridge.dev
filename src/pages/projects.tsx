@@ -1,4 +1,6 @@
 import dynamic from "next/dynamic";
+import "aos/dist/aos.css";
+import Aos from "aos"
 
 const ProjectData = [
     {
@@ -39,10 +41,6 @@ const projects = () => {
                         </div>
                     ))
                     }
-                    
-
-
-
                 </p>
             </div>
         </main>
