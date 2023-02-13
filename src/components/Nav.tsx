@@ -31,8 +31,9 @@ const Navbar = () => {
                        contact
                     </Link>
                 </button>
+                
             </div>
-            <ReactTooltip anchorId="about" />
+           
        </nav>
        
     )
