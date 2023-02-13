@@ -37,7 +37,7 @@ const projects = () => {
             will be updated as I work on more projects.
             {ProjectData.map(({ id, title, description, href }) => (
               <div
-                className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 hover:border-2 border-b-gray-400 rounded-lg p-3"
+                className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 border-2 border-b-gray-400 rounded-lg transform transition duration-300 hover:scale-105"
                 key={id}>
                 <p className="md:text-xl font-bold text-white">{title}</p>
                 <p className="font-normal">{description}</p>
