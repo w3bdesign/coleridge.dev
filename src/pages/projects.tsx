@@ -4,7 +4,7 @@ const ProjectData = [
     {
         title: 'coleridge.dev',
         description: 'This website you are currently on. Built with Next.js, TailwindCSS, and TypeScript.',
-        href: 'https://github.com/kaicoleridge/website',
+        href: 'https://github.com/kaicoleridge/coleridge.dev',
     },
 
     {
