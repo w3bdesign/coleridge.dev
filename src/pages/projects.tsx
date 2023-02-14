@@ -41,7 +41,7 @@ const projects = () => {
                 key={id}>
                 <p className="md:text-xl font-bold text-white">{title}</p>
                 <p className="font-normal">{description}</p>
-                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500 mt-3 flex inline">
+                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500 mt-2 flex inline">
                   <GitHubIcon /> <span className="px-2 mb-1">View on GitHub</span>
                 </a>
               </div>
