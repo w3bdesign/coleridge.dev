@@ -90,8 +90,8 @@ export default function Home() {
               <VSCodeLogo />
               <ReactLogo />
               <SwiftIcon />
-              <NextJsIcon />
               <TailWindIcon />
+              <NextJsIcon />
               <GitIcon />
               <NodeJsIcon />
               <AWSIcon />
