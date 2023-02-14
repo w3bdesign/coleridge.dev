@@ -102,7 +102,7 @@ export default function Home() {
             </p>
             <h1 className="text-2xl font-bold">a deeper insight 💭</h1>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
-              I have a dedication to technology since from as far as I can remember, being curious
+              I have a dedication to technology from as far as I can remember, being curious
               from a young age on how technology works leading into designing and building
               meaningful applications for users. I&apos;m constantly trying to improve and expand my
               knowledge in the tech industry, and I&apos;m always looking for new opportunities to
