@@ -78,7 +78,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "offline") {
     return (
-      <div className="flex flex-col items-start justify-center text-lg font-semibold px-5 py-4 mt-5 text-white dark:bg-[#7289da] rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-lg font-semibold px-5 py-4 mt-5 text-white dark:bg-[#7289da]/60 rounded-lg transition ease-in-out hover:bg-gray-900">
         <h3>
           <svg
             stroke="currentColor"
