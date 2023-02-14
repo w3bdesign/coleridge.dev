@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import "aos/dist/aos.css";
-import Aos from "aos";
+import { GitHubIcon } from "@/Icons";
 
 const ProjectData = [
   {
@@ -41,9 +41,8 @@ const projects = () => {
                 key={id}>
                 <p className="md:text-xl font-bold text-white">{title}</p>
                 <p className="font-normal">{description}</p>
-                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500">
-                  {" "}
-                  View repo 🔗
+                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500 flex inline">
+                  <GitHubIcon /> <span className="px-2">View on GitHub</span>
                 </a>
               </div>
             ))}
