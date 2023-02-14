@@ -26,7 +26,10 @@ const Spotify = () => {
   return (
     <div>
       <p className="text-green-400 text-lg font-semibold flex items-center gap-2">
+        <span className="text-green-400">
         <SpotifyIcon />
+        </span>
+      
         Listening to Spotify
         <span className="w-2 h-2">
           <span className="absolute w-2 h-2 bg-green-400 rounded-full animate-ping" />

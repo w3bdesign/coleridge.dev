@@ -306,7 +306,7 @@ export const SpotifyIcon = () => {
     return(
         <svg
         stroke="currentColor"
-        fill="gray"
+        fill="#1DB954"
         strokeWidth="0"
         role="img"
         viewBox="0 0 24 24"
