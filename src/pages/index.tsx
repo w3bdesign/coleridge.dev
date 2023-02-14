@@ -84,7 +84,7 @@ export default function Home() {
               applications. Here is a comprehensive list of the tools that make up my development
               stack.
             </p>
-            <div className="w-full flex flex-wrap flex-row justify-center grid grid-cols-4 gap-2 p-5 mt-3 m-5 gap-8">
+            <div className="w-full flex flex-wrap flex-row justify-center grid grid-cols-4 gap-8 p-5 mt-3 m-5 ">
               <JavascriptLogo />
               <TypescriptLogo />
               <VSCodeLogo />
