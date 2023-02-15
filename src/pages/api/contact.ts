@@ -5,10 +5,15 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { status: string; }): void; new(): any; }; }; }) => {
   const body = req.body;
 
+  //reduce amount of ti
+
   const message = `
-    Name: ${body.name}\r\n
-    Email: ${body.email}\r\n
-    Message: ${body.message}
+  <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; font-family: sans-serif; font-size: 16px; line-height: 1.5; color: #333; margin: 20px 0;">
+    <h1 style="margin-top: 0; color: #333;">New message from Contact Form</h1>
+    <p><strong>Name:</strong> ${body.name}</p>
+    <p><strong>Email:</strong> ${body.email}</p>
+    <p><strong>Message:</strong> ${body.message}</p>
+  </div>
 `;
 
   const data = {
@@ -25,7 +30,7 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
     return { success: true}
   }
   catch (error) {
-    res.status(500).json({ status: "ERROR 500: INTERNAL_SERVER_ERROR An error occured while sending the email"})
-    res.status(504).json({ status: "ERROR 500: BAD_GATEWAY An error occured while sending the email"})
+    res.status(500).json({ status: "ERROR 500: INTERNAL_SERVER_ERROR An error occured while sending request"})
+    res.status(504).json({ status: "ERROR 500: BAD_GATEWAY An error occured while sending the request"})
   }
 };
