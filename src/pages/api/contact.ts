@@ -25,6 +25,7 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
     return { success: true}
   }
   catch (error) {
-    res.status(500).json({ status: "An error occured while sending the email"})
+    res.status(500).json({ status: "ERROR 500: INTERNAL_SERVER_ERROR An error occured while sending the email"})
+    res.status(504).json({ status: "ERROR 500: BAD_GATEWAY An error occured while sending the email"})
   }
 };
