@@ -10,7 +10,7 @@ const Navbar = () => {
     setMounted(true);
   }, []);
   return (
-    <nav className="md:w-[60rem] sticky md:top-5 z-50 dark:bg-[#12181d]/60 font-bold md:py-2 md:mt-5 py-3 container mx-auto md:rounded-lg backdrop-blur-md">
+    <nav className="md:w-[60rem] sticky md:top-5 z-50 dark:bg-[#12181d]/60 font-bold md:py-2 py-3 container mx-auto md:rounded-lg backdrop-blur-md">
       <div className="text-sm text-slate-400 md:space-x-4">
         <button className="font-extrabold text-2xl rounded-full px-4 py-1">
           <Link href="/">ツ</Link>
