@@ -2,8 +2,6 @@ import { useLanyardWS } from "use-lanyard";
 import { SpotifyIcon } from "@/Icons";
 import { useEffect, useState } from "react";
 
-// TODO: Add proper Typescript types here
-
 const Spotify = () => {
   const DISCORD_ID = "328282806327181322";
   const data = useLanyardWS(DISCORD_ID)
@@ -71,7 +69,7 @@ const Spotify = () => {
           </p>
           
           <div className="w-full rounded-full md:mt-2 mb-1.5 mt-2 dark:bg-gray-800">
-            <div className="bg-green-500 h-3 rounded-md" style={{width: `${current}%` }}></div>
+            <div className="bg-green-500 h-3 rounded-full transition-all ease-linear will-change-[width] duration-1000" style={{width: `${current}%` }}></div>
         </div>
      
 
