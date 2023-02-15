@@ -52,14 +52,14 @@ const Spotify = () => {
             href={`https://open.spotify.com/track/${data?.spotify?.track_id}`}
             target="_blank"
             rel="noreferrer"
-            className="md:w-full w-60 font-medium text-gray-900 dark:text-[#e1eafd] hover:underline truncate">
+            className="md:w-full text-sm md:text-xl text-gray-900 dark:text-[#e1eafd] hover:underline truncate">
             {data?.spotify?.song}
           </a>
           <p className="w-full text-gray-600 dark:text-[#cad2e0] font-normal text-sm truncate">
             {data?.spotify?.artist}
           </p>
           
-          <div className="w-full rounded-full md:mt-2 mb-1.5 mt-2 h-3 dark:bg-gray-800">
+          <div className="md:w-full rounded-full md:mt-2 mb-1.5 mt-2 w-48 dark:bg-gray-800">
             <div className="bg-green-500 h-3 rounded-md" style={{width: `${current}%` }}></div>
         </div>
      
