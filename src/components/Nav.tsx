@@ -11,24 +11,24 @@ const Navbar = () => {
   }, []);
   return (
     <nav className="md:w-[60rem] sticky md:top-5 z-50 dark:bg-[#12181d]/60 font-bold md:py-2 md:mt-5 py-3 container mx-auto md:rounded-lg backdrop-blur-md">
-      <div className="text-sm text-slate-400 md:space-x-4">
+      <div className="text-sm text-slate-400 md:px-3 md:space-x-3">
         <button className="font-extrabold text-2xl rounded-full px-6 py-1">
           <Link href="/">ツ</Link>
         </button>
 
         <button
           id="about"
-          className="transition ease-in-out hover:bg-slate-600  hover:text-white rounded-md px-3 py-1 md:visible"
+          className="transition ease-in-out hover:bg-slate-600  hover:text-white rounded-md px-2 py-1 md:visible"
           data-tooltip-content="Coming Soon"
         >
           <Link href="/">about</Link>
         </button>
 
-        <button className="transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible">
+        <button className="transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-2 py-1 md:visible">
           <Link href="/projects">projects</Link>
         </button>
 
-        <button className="transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-3 py-1 md:visible">
+        <button className="transition ease-in-out hover:bg-slate-600 hover:text-white rounded-md px-2 py-1 md:visible">
           <Link href="/contact">contact</Link>
         </button>
       </div>

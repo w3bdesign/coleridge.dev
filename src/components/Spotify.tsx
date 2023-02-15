@@ -1,12 +1,23 @@
-import React from "react";
 import { useLanyardWS } from "use-lanyard";
 import { SpotifyIcon } from "@/Icons";
+import { useEffect, useState } from "react";
 
 // TODO: Add proper Typescript types here
 
 const Spotify = () => {
   const DISCORD_ID = "328282806327181322";
   const data = useLanyardWS(DISCORD_ID)
+  const [, mounted] = useState({});
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      mounted({});
+    }, 1000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
 
   if (!data?.spotify) {
     return (
@@ -24,8 +35,8 @@ const Spotify = () => {
   }
 
   const total = data.spotify.timestamps.end - data.spotify.timestamps.start;
-  const current = 100 - ((data.spotify.timestamps.end - Date.now()) / total) * 100;
-
+  const current = 100 - ((data.spotify.timestamps.end - new Date().getTime()) / total) * 100;
+  
   return (
     <div>
       <p className="text-green-400 text-lg font-semibold flex items-center gap-2">
