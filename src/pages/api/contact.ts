@@ -25,6 +25,6 @@ export default async (req: { body: any; }, res: { status: (arg0: number) => { ()
     return { success: true}
   }
   catch (error) {
-    return { success: false}
+    res.status(500).json({ status: "An error occured while sending the email"})
   }
 };
