@@ -19,7 +19,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "online") {
     return (
-      <div className="flex flex-col items-start justify-center text-lg font-bold px-2 py-4 mt-5 text-white bg-green-600 rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-lg font-bold px-4 pl-3 py-4 mt-5 text-white bg-green-600 rounded-lg transition ease-in-out hover:bg-gray-900">
         <h3>
           <span className="px-2">
           <DiscordLogo />
