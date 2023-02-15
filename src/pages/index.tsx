@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex flex-col items-start justify-start leading-7 m-5">
             <Spotify />
 
-            <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-3 gap-2">
+            <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-3 gap-1">
               <Location />
               <Link href="https://discord.com/invite/gFY6uHQPNB">
                 <DiscordStatus />

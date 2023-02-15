@@ -61,7 +61,7 @@ const Spotify = () => {
             href={`https://open.spotify.com/track/${data?.spotify?.track_id}`}
             target="_blank"
             rel="noreferrer"
-            className="md:w-full text-sm md:text-xl text-gray-900 dark:text-[#e1eafd] hover:underline truncate">
+            className="md:w-full w-44 text-sm md:text-xl text-gray-900 dark:text-[#e1eafd] hover:underline truncate">
             {data?.spotify?.song}
           </a>
           <p className="w-full text-gray-600 dark:text-[#cad2e0] font-normal text-sm truncate">
