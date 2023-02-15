@@ -1,18 +1,18 @@
 import React from "react";
-import {useLanyardWS } from "use-lanyard";
+import { useLanyardWS } from "use-lanyard";
 import { SpotifyIcon } from "@/Icons";
 
 // TODO: Add proper Typescript types here
 
 const Spotify = () => {
-    const DISCORD_ID = "328282806327181322";
-    const data = useLanyardWS(DISCORD_ID)
-    
+  const DISCORD_ID = "328282806327181322";
+  const data = useLanyardWS(DISCORD_ID)
+
   if (!data?.spotify) {
     return (
       <div>
         <p className="dark:text-gray-500 text-lg font-semibold mb-5 mt-5 flex items-center gap-2">
-            <SpotifyIcon />
+          <SpotifyIcon />
           Not listening to anything
           <span className="w-2 h-2">
             <span className="absolute w-2 h-2 bg-red-400 rounded-full animate-ping" />
@@ -23,13 +23,16 @@ const Spotify = () => {
     );
   }
 
+  const total = data.spotify.timestamps.end - data.spotify.timestamps.start;
+  const current = 100 - ((data.spotify.timestamps.end - Date.now()) / total) * 100;
+
   return (
     <div>
       <p className="text-green-400 text-lg font-semibold flex items-center gap-2">
         <span className="text-green-400">
-        <SpotifyIcon />
+          <SpotifyIcon />
         </span>
-      
+
         Listening to Spotify
         <span className="w-2 h-2">
           <span className="absolute w-2 h-2 bg-green-400 rounded-full animate-ping" />
@@ -37,7 +40,7 @@ const Spotify = () => {
         </span>
       </p>
 
-      <div className="text-green-500 text-lg font-semibold mt-5 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 border-4 rounded-md border-green-400">
+      <div className="text-green-500 text-lg font-semibold mt-5 pr-3 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 border-4 rounded-md border-green-400">
         <img
           src={data.spotify.album_art_url ?? ""}
           className="w-[10rem] h-[6rem] md:h-[8rem] mr-5 pointer-events-none"
@@ -55,9 +58,16 @@ const Spotify = () => {
           <p className="w-full text-gray-600 dark:text-[#cad2e0] font-normal text-sm truncate">
             {data?.spotify?.artist}
           </p>
+          
+          <div className="w-full rounded-md mt-2 h-3 dark:bg-slate-700">
+            <div className="bg-green-500 h-3 rounded-md" style={{width: `${current}%` }}></div>
         </div>
+     
+
+
       </div>
     </div>
+    </div >
   );
 };
 
