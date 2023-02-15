@@ -40,10 +40,10 @@ const Spotify = () => {
         </span>
       </p>
 
-      <div className="text-green-500 text-lg font-semibold mt-5 pr-3 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 border-4 rounded-md border-green-400">
+      <div className="text-green-500 text-lg font-semibold mt-5 pr-3 flex items-center dark:bg-wh/60 dark:bg-[#12181d]/60 border-4 rounded-md overflow-hidden border-green-400">
         <img
           src={data.spotify.album_art_url ?? ""}
-          className="w-[10rem] h-[6.5rem] md:h-[8rem] mr-5 pointer-events-none"
+          className="w-[10rem] h-[7rem] md:h-[8rem] mr-5 pointer-events-none"
           alt={data.spotify?.album}
         />
         <div className="w-full h-full flex flex-col items-start justify-center">
@@ -59,7 +59,7 @@ const Spotify = () => {
             {data?.spotify?.artist}
           </p>
           
-          <div className="w-full rounded-full md:mt-2 mb-3 mt-2 h-3 dark:bg-slate-700">
+          <div className="w-full rounded-full md:mt-2 mb-1.5 mt-2 h-3 dark:bg-slate-700">
             <div className="bg-green-500 h-3 rounded-md" style={{width: `${current}%` }}></div>
         </div>
      
