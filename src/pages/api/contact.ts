@@ -5,8 +5,6 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { status: string; }): void; new(): any; }; }; }) => {
   const body = req.body;
 
-  //reduce amount of ti
-
   const message = `
   <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; font-family: sans-serif; font-size: 16px; line-height: 1.5; color: #333; margin: 20px 0;">
     <h1 style="margin-top: 0; color: #333;">New message from Contact Form</h1>
