@@ -1,6 +1,7 @@
 export const GitHubIcon = () => {
     return (
         <svg
+            className="hover:text-[#171515] duration-300"
             xmlns="http://www.w3.org/2000/svg"
             height="28"
             width="28"
@@ -19,6 +20,7 @@ export const GitHubIcon = () => {
 export const TwitterIcon = () => {
     return (
         <svg
+            className="hover:text-[#1DA1F2] duration-300"
             xmlns="http://www.w3.org/2000/svg"
             width="28"
             height="28"
@@ -35,6 +37,7 @@ export const TwitterIcon = () => {
 export const MailIcon = () => {
     return (
         <svg
+            className="hover:text-[#4e63e9] duration-300"
             xmlns="http://www.w3.org/2000/svg"
             width="28"
             height="28"
@@ -54,6 +57,7 @@ export const MailIcon = () => {
 export const LinkedinLogo = () => {
     return (
         <svg
+            className="hover:text-[#0077b5] duration-300"
             xmlns="http://www.w3.org/2000/svg"
             width="29"
             height="29"
@@ -100,7 +104,7 @@ export const JavascriptLogo = () => {
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
-        className="h-7 w-7"
+        className="h-7 w-7 hover:text-yellow-400 duration-300"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +123,7 @@ export const TypescriptLogo = () => {
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
-        className="h-7 w-7"
+        className="h-7 w-7 hover:text-blue-500 duration-300"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +140,7 @@ export const VSCodeLogo = () => {
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
-        className="h-7 w-7"
+        className="h-7 w-7 hover:text-blue-500 duration-300"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +159,7 @@ export const ReactLogo = () => {
     stroke-width="0"
     role="img"
     viewBox="0 0 24 24"
-    className="h-7 w-7"
+    className="h-7 w-7 hover:text-blue-400 duration-300"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg">
@@ -169,6 +173,7 @@ export const ReactLogo = () => {
 export const NextJsIcon = () => {
     return (
         <svg 
+        className="hover:text-gray-800 duration-300"
         stroke = "currentColor"
         fill = "currentColor"
         stroke-width = "0"
@@ -189,7 +194,7 @@ export const SwiftIcon = () => {
         stroke-width = "0"
         role = "img"
         viewBox = "0 0 24 24"
-        className = "h-6 w-6"
+        className = "h-6 w-6 hover:text-orange-600 duration-300"
         height = "1em"
         width = "1em"
         xmlns = "http://www.w3.org/2000/svg"><path d="M21.984 16.348c.056-.112.056-.224.112-.336 1.346-5.272-1.851-11.44-7.347-14.693 2.412 3.253 3.365 7.122 2.524 10.599-.056.28-.168.617-.28.897a5.173 5.173 0 0 1-.45-.28S11.104 9.17 5.273 3.282c-.169-.168 3.14 4.71 6.841 8.58-1.738-1.01-6.673-4.542-9.758-7.403.337.617.842 1.234 1.346 1.851 2.58 3.309 5.945 7.346 9.983 10.43-2.86 1.74-6.842 1.851-10.88 0-1.01-.448-1.85-1.009-2.804-1.682 1.682 2.636 4.318 5.048 7.459 6.337 3.757 1.627 7.57 1.515 10.318 0h.057c.112-.056.224-.112.336-.224 1.346-.673 3.982-1.402 5.44 1.402.392.785 1.121-2.86-1.626-6.225z"></path > 
@@ -200,6 +205,7 @@ export const SwiftIcon = () => {
 export const TailWindIcon = () => {
     return (
         <svg 
+        className="h-7 w-7 hover:text-blue-400 duration-300"
         stroke = "currentColor"
         fill = "currentColor"
         stroke-width = "0"
@@ -215,6 +221,7 @@ export const TailWindIcon = () => {
 export const GitIcon = () => {
     return (
         <svg 
+        className="h-7 w-7 hover:text-orange-600 duration-300"
         stroke = "currentColor"
         fill = "currentColor"
         stroke-width = "0"
@@ -230,6 +237,7 @@ export const GitIcon = () => {
 export const NodeJsIcon = () => {
     return(
         <svg 
+        className="h-7 w-7 hover:text-green-700 duration-300"
         stroke = "currentColor"
         fill = "currentColor"
         stroke-width = "0"
@@ -247,6 +255,7 @@ export const AWSIcon = () => {
         <svg
         stroke = "currentColor"
         fill = "currentColor"
+        className="hover:text-orange-500 duration-300"
         stroke-width = "0"
         role ="img"
         viewBox = "0 0 24 24"
@@ -265,7 +274,7 @@ export const MongoIcon = () => {
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
-        className="h-7 w-7"
+        className="h-7 w-7 hover:text-green-500 duration-300"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +291,7 @@ export const DockerIcon = () => {
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
-        className="h-6 w-6"
+        className="h-6 w-6 hover:text-blue-500 duration-300"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
