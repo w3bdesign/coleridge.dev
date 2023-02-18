@@ -255,7 +255,7 @@ export const AWSIcon = () => {
         <svg
         stroke = "currentColor"
         fill = "currentColor"
-        className="hover:text-orange-500 duration-300"
+        className="hover:text-[#ff9900] duration-300"
         stroke-width = "0"
         role ="img"
         viewBox = "0 0 24 24"
