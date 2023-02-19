@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TimeComponent from "@/components/TimeComponent";
 import "aos/dist/aos.css";
 
@@ -37,9 +37,6 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-
-
-
 
   };
 

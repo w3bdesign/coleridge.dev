@@ -21,7 +21,7 @@ const ProjectData = [
   {
     id: 2,
     title: "DoIt",
-    description: "a minimal task app built with Swift 📝",
+    description: "a very minimal task app for iOS 📝",
     href: "https://github.com/kaicoleridge/DoIt"
   }
 ];
