@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TimeComponent from "@/components/TimeComponent";
 import "aos/dist/aos.css";
-import Aos from "aos";
 
-const Contact = () => {
+
+export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -13,7 +13,7 @@ const Contact = () => {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   );
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const HandleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const data = {
       name,
@@ -34,9 +34,14 @@ const Contact = () => {
       }
     });
 
-    setName("");
-    setEmail("");
-    setMessage("");
+    useEffect(() => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    }, [success]);
+
+
+  
   };
 
   return (
@@ -88,7 +93,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col itemscen justify-center m-10 gap-3">
                 <button
-                  onClick={handleSubmit}
+                  onClick={HandleSubmit}
                   type="submit"
                   className="bg-indigo-600 text-white font-bold transition ease-in-out hover:bg-slate-700 rounded-lg py-3 "
                 >
@@ -109,4 +114,3 @@ const Contact = () => {
   );
 };
 
-export default Contact;

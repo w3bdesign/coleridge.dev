@@ -22,7 +22,7 @@ const CurrentStatus = () => {
     <p className="text-black/50 dark:text-white/50 text-md mt-2">
       <p className="text-white font-semibold mb-5">
         Have a question you want to ask? Or want to connect with me? Feel free to get in touch by
-        leaving a message below. You can also contact me via <a href="https://twitter.com/kaicoleridge" target={"_blank"} className="underline">Twitter</a> or <a href="https://discord.gg/gFY6uHQPNB" target={"_blank"} className="underline">Discord.</a>
+        leaving a message below. You can also contact me via <a href="https://twitter.com/kaicoleridge" target={"_blank"} rel={"noreferrer"} className="underline">Twitter</a> or <a href="https://discord.gg/gFY6uHQPNB" target={"_blank"} rel={"noreferrer"} className="underline">Discord.</a>
       </p>
       It&apos;s currently{" "}
       <span className="font-semibold text-black/60 dark:text-white/60">{time}</span> for me, so
