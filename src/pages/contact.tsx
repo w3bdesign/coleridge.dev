@@ -3,7 +3,7 @@ import TimeComponent from "@/components/TimeComponent";
 import "aos/dist/aos.css";
 
 
-export default function Contact() {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -13,7 +13,7 @@ export default function Contact() {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   );
 
-  const HandleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const data = {
       name,
@@ -34,14 +34,13 @@ export default function Contact() {
       }
     });
 
-    useEffect(() => {
-      setName("");
-      setEmail("");
-      setMessage("");
-    }, [success]);
+    setName("");
+    setEmail("");
+    setMessage("");
 
 
-  
+
+
   };
 
   return (
@@ -93,7 +92,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-col itemscen justify-center m-10 gap-3">
                 <button
-                  onClick={HandleSubmit}
+                  onClick={handleSubmit}
                   type="submit"
                   className="bg-indigo-600 text-white font-bold transition ease-in-out hover:bg-slate-700 rounded-lg py-3 "
                 >
@@ -114,3 +113,4 @@ export default function Contact() {
   );
 };
 
+export default Contact;
