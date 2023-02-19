@@ -4,6 +4,8 @@ const birthday = () => {
   const diff = birthday.getTime() - today.getTime();
   const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
+
+
   if (days === 0) {
     return (
       <div className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 rounded-lg p-3 text-white">
@@ -18,6 +20,7 @@ const birthday = () => {
     </div>
   );
 };
+
 
 
 export default birthday;
