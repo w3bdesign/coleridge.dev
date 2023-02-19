@@ -37,13 +37,14 @@ export default function Home() {
           <div className="flex flex-col items-start justify-start leading-7 m-5">
             <Spotify />
 
-            <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-3 gap-1">
+            <div className="flex flex-col md:flex-col md:grid grid-cols-3 md:gap-1">
               <Location />
-              <Link href="https://discord.com/invite/gFY6uHQPNB">
-                <DiscordStatus />
-              </Link>
               <Birthday />
+              <Link href="https://discord.com/invite/gFY6uHQPNB">
+              <DiscordStatus />
+              </Link>
             </div>
+
             <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-4 gap-5 mt-10">
               <a href="https://github.com/KaiColeridge" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
