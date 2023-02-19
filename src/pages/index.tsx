@@ -62,7 +62,7 @@ export default function Home() {
                 <MailIcon />
               </a>
             </div>
-            <h1 className="md:text-7xl text-4xl font-extrabold md:mt-3 text-indigo-300">
+            <h1 className="md:text-7xl text-4xl font-black md:mt-3 text-indigo-300">
               Hey I&apos;m, <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500">Kai ツ</span>
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
