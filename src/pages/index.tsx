@@ -40,7 +40,7 @@ export default function Home() {
             <div className="flex w-full flex-col md:flex-col md:grid grid-cols-3 md:gap-1">
               <Location />
               <Birthday />
-              <Link href="https://discord.com/invite/gFY6uHQPNB">
+              <Link href="https://coleridge.dev/discord">
               <DiscordStatus />
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function Home() {
               <a href="https://github.com/KaiColeridge" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
               </a>
-              <a href="https://twitter.com/KaiColeridge" target="_blank" rel="noopener noreferrer">
+              <a href="https://coleridge.dev/twitter" target="_blank" rel="noopener noreferrer">
                 <TwitterIcon />
               </a>
               <a
