@@ -24,8 +24,8 @@ const Spotify = () => {
           <SpotifyIcon />
           Not listening to anything
           <span className="w-2 h-2">
-            <span className="absolute w-2 h-2 bg-red-400 rounded-full animate-ping" />
-            <span className="absolute w-2 h-2 bg-red-400 rounded-full" />
+            <span className="absolute w-2 h-2 bg-gray-400 rounded-full animate-ping" />
+            <span className="absolute w-2 h-2 bg-gray-400 rounded-full" />
           </span>
         </p>
       </div>
