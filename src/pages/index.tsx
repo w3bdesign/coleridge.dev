@@ -5,6 +5,8 @@ import DiscordStatus from "@/components/DiscordStatus";
 import Location from "@/components/Location";
 import Birthday from "@/components/Birthday";
 import Link from "next/link";
+import "aos/dist/aos.css";
+import Aos from "aos";
 import {
   GitHubIcon,
   TwitterIcon,
@@ -23,8 +25,8 @@ import {
   MongoIcon,
   DockerIcon
 } from "../Icons";
-import "aos/dist/aos.css";
-import Aos from "aos";
+
+
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
@@ -33,7 +35,6 @@ export default function Home() {
   const DISCORD_ID = "328282806327181322";
   const { data: user  } = useLanyard(DISCORD_ID);
   
-
   return (
     <>
       <div data-aos="zoom-in">
