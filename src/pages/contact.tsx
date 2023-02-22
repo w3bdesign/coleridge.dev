@@ -57,7 +57,7 @@ const Contact = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Tim Cook"
+                  placeholder="Jony Ive"
                   required
                   className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white"
                 />
@@ -69,7 +69,7 @@ const Contact = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="tcook@apple.com"
+                  placeholder="jive@apple.com"
                   required
                   className="w-full rounded-md p-2 dark:bg-[#12181d]/60 text-white"
                 />

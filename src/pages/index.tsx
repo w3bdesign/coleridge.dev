@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLanyard } from "use-lanyard";
 import Spotify from "@/components/Spotify";
 import DiscordStatus from "@/components/DiscordStatus";
 import Location from "@/components/Location";
@@ -24,11 +25,14 @@ import {
 } from "../Icons";
 import "aos/dist/aos.css";
 import Aos from "aos";
-
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
+
+  const DISCORD_ID = "328282806327181322";
+  const { data: user  } = useLanyard(DISCORD_ID);
+  
 
   return (
     <>
@@ -66,7 +70,7 @@ export default function Home() {
               Hey I&apos;m, <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500">Kai ツ</span>
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
-              I&apos;m a 22 year old full stack developer and CS student from the UK. I&apos;m
+              I&apos;m a {user?.kv.age} year old full stack developer and CS student from the UK. I&apos;m
               currently working on a few upcoming projects which I&apos;ll share soon. Other than
               coding I enjoy listening to music, watching films and travelling the world.
             </p>
