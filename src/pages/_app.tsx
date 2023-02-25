@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/design.css";
+import "aos/dist/aos.css";
 import Navbar from "@/components/Nav";
 import type { AppProps } from "next/app";
 import Head from "next/head";
