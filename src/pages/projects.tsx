@@ -1,7 +1,6 @@
-import dynamic from "next/dynamic";
-import "aos/dist/aos.css";
 import { GitHubIcon } from "@/Icons";
-
+import Aos from "aos";
+import { useEffect } from "react";
 const ProjectData = [
   {
     id: 0,
@@ -24,15 +23,22 @@ const ProjectData = [
     description: "a very minimal task app for iOS 📝",
     href: "https://github.com/kaicoleridge/DoIt"
   }
+
 ];
 
-const projects = () => {
+
+
+export default function Projects()  { 
+  useEffect(() => {
+    Aos.init({ duration: 300 });
+  }, []);
+  
   return (
     <div data-aos="zoom-in">
       <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">
         <div className="flex flex-col items-start justify-start leading-7 m-10">
           <h1 className="md:text-5xl font-bold">Projects</h1>
-          <p className="text-md line text-gray-400  mt-5">
+          <div className="text-md line text-gray-400  mt-5">
             Here are a couple of projects I&apos;ve worked on and am currently working on. This list
             will be updated as I work on more projects.
             {ProjectData.map(({ id, title, description, href }) => (
@@ -52,11 +58,12 @@ const projects = () => {
                 </a>
               </div>
             ))}
-          </p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default dynamic(() => Promise.resolve(projects), { ssr: false });
+
+
