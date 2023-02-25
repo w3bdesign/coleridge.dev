@@ -38,10 +38,16 @@ const projects = () => {
             {ProjectData.map(({ id, title, description, href }) => (
               <div
                 className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 border-2 border-b-gray-400 rounded-lg transform transition duration-300 hover:scale-105"
-                key={id}>
+                key={id}
+              >
                 <p className="md:text-xl font-bold text-white">{title}</p>
                 <p className="font-normal">{description}</p>
-                <a href={href} target="_blank" rel="noreferrer" className="text-indigo-500 mt-2 flex inline">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-indigo-500 mt-2 flex inline"
+                >
                   <GitHubIcon /> <span className="px-2 mb-1">View on GitHub</span>
                 </a>
               </div>

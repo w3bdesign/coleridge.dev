@@ -26,15 +26,14 @@ import {
   DockerIcon
 } from "../Icons";
 
-
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
 
   const DISCORD_ID = "328282806327181322";
-  const { data: user  } = useLanyard(DISCORD_ID);
-  
+  const { data: user } = useLanyard(DISCORD_ID);
+
   return (
     <>
       <div data-aos="zoom-in">
@@ -46,7 +45,7 @@ export default function Home() {
               <Location />
               <Birthday />
               <Link href="https://coleridge.dev/discord">
-              <DiscordStatus />
+                <DiscordStatus />
               </Link>
             </div>
 
@@ -60,7 +59,8 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/kaicoleridge/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <LinkedinLogo />
               </a>
               <a href="mailto:kai@coleridge.dev" target="_blank" rel="noopener noreferrer">
@@ -68,20 +68,23 @@ export default function Home() {
               </a>
             </div>
             <h1 className="md:text-7xl text-4xl font-black md:mt-3 text-indigo-300">
-              Hey I&apos;m, <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500">Kai ツ</span>
+              Hey I&apos;m,{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500">
+                Kai ツ
+              </span>
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
-              I&apos;m a {user?.kv.age} year old full stack developer and CS student from the UK. I&apos;m
-              currently working on a few upcoming projects which I&apos;ll share soon. Other than
-              coding I enjoy listening to music, watching films and travelling the world.
+              I&apos;m a {user?.kv.age} year old full stack developer and CS student from the UK.
+              I&apos;m currently working on a few upcoming projects which I&apos;ll share soon.
+              Other than coding I enjoy listening to music, watching films and travelling the world.
             </p>
             <h1 className="text-2xl font-bold">a deeper insight 💭</h1>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
-              I have a dedication to technology from as far as I can remember, being curious
-              from a young age on how technology works leading into designing and building
-              meaningful applications for users. I&apos;m constantly trying to improve and expand my
-              knowledge in the tech industry, and I&apos;m always looking for new opportunities to
-              learn and grow.
+              I have a dedication to technology from as far as I can remember, being curious from a
+              young age on how technology works leading into designing and building meaningful
+              applications for users. I&apos;m constantly trying to improve and expand my knowledge
+              in the tech industry, and I&apos;m always looking for new opportunities to learn and
+              grow.
             </p>
             <h1 className="text-2xl font-bold">my tech stack 💻</h1>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">

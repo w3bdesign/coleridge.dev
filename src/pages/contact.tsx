@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import TimeComponent from "@/components/TimeComponent";
 import "aos/dist/aos.css";
 
-
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -37,7 +36,6 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-
   };
 
   return (

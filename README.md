@@ -5,13 +5,14 @@
 ### Source code to my personal website
 
 #### Tech Stack:
+
 - Developed with [NextJS](https://nextjs.org/) a poweful framework for building serverless applications
 - Uses a React Hook for [Lanyard API](https://github.com/Phineas/lanyard) to fetch Discord Presence data via Websocket to display Spotify status, online presence etc. A shoutout to [Phineas](https://github.com/Phineas) for developing this API
-- Uses [TailWind CSS](https://tailwindcss.com/) to design the site. 
-- Uses [SendGrid Twilio API](https://sendgrid.com/) to send contact form data relays it to my personal email. 
+- Uses [TailWind CSS](https://tailwindcss.com/) to design the site.
+- Uses [SendGrid Twilio API](https://sendgrid.com/) to send contact form data relays it to my personal email.
 
 #### Upcoming changes:
-- Implement light mode 
-- Develop about page 
-- Add top loading bar animation
 
+- Implement light mode
+- Develop about page
+- Add top loading bar animation
