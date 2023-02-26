@@ -12,7 +12,7 @@ const ProjectData = [
 
   {
     id: 1,
-    title: "Vector",
+    title: "VecTor",
     description: "a multi-purpose Discord bot for my server 🤖",
     href: "https://github.com/kaicoleridge/VecTor"
   },
@@ -32,7 +32,7 @@ export default function Projects()  {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
-  
+
   return (
     <div data-aos="zoom-in">
       <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">

@@ -41,6 +41,6 @@ export default async (
       .json({ status: "ERROR 500: INTERNAL_SERVER_ERROR An error occured while sending request" });
     res
       .status(504)
-      .json({ status: "ERROR 500: BAD_GATEWAY An error occured while sending the request" });
+      .json({ status: "ERROR 504: BAD_GATEWAY An error occured while sending the request" });
   }
 };
