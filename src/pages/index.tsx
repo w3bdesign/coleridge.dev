@@ -5,7 +5,6 @@ import DiscordStatus from "@/components/DiscordStatus";
 import Location from "@/components/Location";
 import Birthday from "@/components/Birthday";
 import Link from "next/link";
-import "aos/dist/aos.css";
 import Aos from "aos";
 import {
   GitHubIcon,
@@ -26,6 +25,7 @@ import {
   DockerIcon
 } from "../Icons";
 
+
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
@@ -39,7 +39,7 @@ export default function Home() {
       <div data-aos="zoom-in">
         <main className="container mx-auto flex flex-col items-start justify-start max-w-3xl mt-5">
           <div className="flex flex-col items-start justify-start leading-7 m-5">
-            <Spotify />
+          <Spotify />
 
             <div className="flex w-full flex-col md:flex-col md:grid grid-cols-3 md:gap-1">
               <Location />
