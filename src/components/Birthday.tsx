@@ -1,5 +1,5 @@
 const birthday = () => {
-  const birthday = new Date("2023-03-30 GMT");
+  const birthday = new Date(2023, 2, 30);
   const today = new Date()
   const diff = birthday.getTime() - today.getTime();
   const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
