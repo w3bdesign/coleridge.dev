@@ -7,7 +7,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "dnd") {
     return (
-      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-red-500 rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-red-500 rounded-lg">
         <h3>
           <span className="px-2">
             <DiscordLogo />
@@ -20,7 +20,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "online") {
     return (
-      <div className="flex flex-col items-start justify-center text-xl font-bold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-green-600 rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-xl font-bold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-green-600 rounded-lg">
         <h3>
           <span className="px-2">
             <DiscordLogo />
@@ -33,7 +33,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "idle") {
     return (
-      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-yellow-600 rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-yellow-600 rounded-lg">
         <h3>
           <span className="px-2">
             <DiscordLogo />
@@ -46,7 +46,7 @@ const DiscordStatus = () => {
 
   if (data?.discord_status === "offline") {
     return (
-      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white dark:bg-[#7289da]/80 rounded-lg transition ease-in-out hover:bg-gray-900">
+      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white dark:bg-[#7289da]/80 rounded-lg">
         <h3>
           <span className="px-2">
             <DiscordLogo />

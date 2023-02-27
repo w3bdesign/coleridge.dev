@@ -25,7 +25,6 @@ import {
   DockerIcon
 } from "../Icons";
 
-
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 300 });
@@ -39,14 +38,12 @@ export default function Home() {
       <div data-aos="zoom-in">
         <main className="container mx-auto flex flex-col items-start justify-start max-w-3xl mt-5">
           <div className="flex flex-col items-start justify-start leading-7 m-5">
-          <Spotify />
+            <Spotify />
 
             <div className="flex w-full flex-col md:flex-col md:grid grid-cols-3 md:gap-1">
               <Location />
               <Birthday />
-              <Link href="https://coleridge.dev/discord">
-                <DiscordStatus />
-              </Link>
+              <DiscordStatus />
             </div>
 
             <div className="flex flex-wrap flex-row justify-start md:grid grid-cols-4 gap-5 mt-10">
@@ -74,9 +71,10 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
-              I&apos;m a <strong>{user?.kv.age}</strong> year old full stack developer and CS student from the UK.
-              I&apos;m currently working on a few upcoming projects which I&apos;ll share soon.
-              Other than coding I enjoy listening to music, watching films and travelling the world.
+              I&apos;m a <strong>{user?.kv.age}</strong> year old full stack developer and CS
+              student from the UK. I&apos;m currently working on a few upcoming projects which
+              I&apos;ll share soon. Other than coding I enjoy listening to music, watching films and
+              travelling the world.
             </p>
             <h1 className="text-2xl font-bold">a deeper insight 💭</h1>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">

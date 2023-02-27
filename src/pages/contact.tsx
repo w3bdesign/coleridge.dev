@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import TimeComponent from "@/components/TimeComponent";
 import Aos from "aos";
 
-
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +14,7 @@ const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
-  
+
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const data = {
@@ -42,7 +41,7 @@ const Contact = () => {
     setMessage("");
   };
 
-  return (    
+  return (
     <>
       <div data-aos="zoom-in">
         <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">

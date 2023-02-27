@@ -1,6 +1,7 @@
 import { GitHubIcon } from "@/Icons";
 import Aos from "aos";
 import { useEffect } from "react";
+
 const ProjectData = [
   {
     id: 0,
@@ -23,12 +24,9 @@ const ProjectData = [
     description: "a very minimal task app for iOS 📝",
     href: "https://github.com/kaicoleridge/DoIt"
   }
-
 ];
 
-
-
-export default function Projects()  { 
+export default function Projects() {
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
@@ -54,7 +52,7 @@ export default function Projects()  {
                   rel="noreferrer"
                   className="text-indigo-500 mt-2 flex inline"
                 >
-                  <GitHubIcon /> <span className="px-2 mb-1">View on GitHub</span>
+                  <GitHubIcon /> <span className="px-2 mb-1 font-bold">View on GitHub</span>
                 </a>
               </div>
             ))}
@@ -63,7 +61,4 @@ export default function Projects()  {
       </div>
     </div>
   );
-};
-
-
-
+}
