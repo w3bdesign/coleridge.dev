@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 const CurrentStatus = () => {
   const [time, setTime] = useState<string>("00:00:00 p.m.");
   const [awake, setAwake] = useState<boolean>(true);
+  
   function updateTime() {
     let currentTime = new Date().toLocaleString("en-GB", {
       hour: "2-digit",
@@ -27,7 +28,7 @@ const CurrentStatus = () => {
           href="https://coleridge.dev/twitter"
           target={"_blank"}
           rel={"noreferrer"}
-          className="underline"
+          className="underline text-indigo-500 font-extrabold"
         >
           Twitter
         </a>{" "}
@@ -36,7 +37,7 @@ const CurrentStatus = () => {
           href="https://coleridge.dev/discord"
           target={"_blank"}
           rel={"noreferrer"}
-          className="underline"
+          className="underline text-indigo-500 font-extrabold"
         >
           Discord.
         </a>
