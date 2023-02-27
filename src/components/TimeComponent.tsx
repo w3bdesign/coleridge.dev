@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 const CurrentStatus = () => {
   const [time, setTime] = useState<string>("00:00:00 p.m.");
   const [awake, setAwake] = useState<boolean>(true);
-  
+
   function updateTime() {
     let currentTime = new Date().toLocaleString("en-GB", {
       hour: "2-digit",
