@@ -23,8 +23,8 @@ const Contact = () => {
       message
     };
 
-    if (!name || !email || !message) return setError("Please fill in all fields");
-    if (!emailRegex.test(email)) return setError("Please enter a valid email");
+    if (!name || !email || !message) return setError("❌ Please fill in all fields");
+    if (!emailRegex.test(email)) return setError("❌ Please enter a valid email");
     if (error) setError("");
     if (name && email && message) setSuccess("✅ Message sent successfully");
 
