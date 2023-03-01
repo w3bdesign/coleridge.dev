@@ -4,12 +4,10 @@ import dynamic from "next/dynamic";
 const CurrentStatus = () => {
   const [time, setTime] = useState<string>("00:00:00 p.m.");
   const [awake, setAwake] = useState<boolean>(true);
-
+  
   function updateTime() {
-    let currentTime = new Date().toLocaleString("en-GB", {
-      hour: "2-digit",
-      minute: "2-digit"
-    });
+   //show uk time instead of local time
+    let currentTime = new Date().toUTCString().slice(-12, -7);
     let ampm = currentTime >= "12:00" ? "pm" : "am";
     setTime(currentTime + ampm);
     setTimeout(updateTime, 60 * 1000);
