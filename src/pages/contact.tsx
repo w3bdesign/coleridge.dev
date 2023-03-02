@@ -46,7 +46,7 @@ const Contact = () => {
       <div data-aos="zoom-in">
         <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">
           <div className="flex flex-col items-start justify-start leading-7 pt-5 m-5 gap-3 ">
-            <h1 className="text-5xl">Get in touch 💬</h1>
+            <h1 className="text-4xl">Get in touch 💬</h1>
             <TimeComponent />
           </div>
           <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
