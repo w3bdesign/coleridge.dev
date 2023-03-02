@@ -46,13 +46,13 @@ const Contact = () => {
       <div data-aos="zoom-in">
         <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">
           <div className="flex flex-col items-start justify-start leading-7 pt-5 m-5 gap-3 ">
-            <h1>Get in touch 💬</h1>
+            <h1 className="text-5xl">Get in touch 💬</h1>
             <TimeComponent />
           </div>
           <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
             <form>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="Name">Name*</label>
+                <label htmlFor="Name">Name<span className="text-red-500">*</span></label>
                 <input
                   id="name"
                   type="text"
@@ -64,7 +64,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="email">Email*</label>
+                <label htmlFor="email">Email<span className="text-red-500">*</span></label>
                 <input
                   id="email"
                   type="email"
@@ -76,7 +76,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="message">Message*</label>
+                <label htmlFor="message">Message<span className="text-red-500">*</span></label>
                 <textarea
                   maxLength={1000}
                   value={message}
