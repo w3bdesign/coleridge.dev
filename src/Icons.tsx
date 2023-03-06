@@ -208,7 +208,7 @@ export const SwiftIcon = () => {
 export const TailWindIcon = () => {
   return (
     <svg
-      className="h-7 w-7 hover:text-blue-400 duration-300"
+      className="h-7 w-7 hover:text-cyan-400 duration-300"
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"
