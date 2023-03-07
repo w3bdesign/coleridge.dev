@@ -4,7 +4,7 @@
 
 ### Source code to my personal website
 
-#### Tech Stack:
+#### Tech Stack/Features:
 
 - Developed with [NextJS](https://nextjs.org/) a poweful framework for building serverless applications
 - Uses a React Hook for [Lanyard API](https://github.com/Phineas/lanyard) to fetch Discord Presence data via Websocket to display Spotify status, online presence etc. A shoutout to [Phineas](https://github.com/Phineas) for developing this API
