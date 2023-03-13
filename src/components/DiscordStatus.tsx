@@ -4,17 +4,19 @@ const DISCORD_ID = "328282806327181322";
 
 const DiscordStatus = () => {
   const data = useLanyardWS(DISCORD_ID);
-
+  
+//switch statement 
   if (data?.discord_status === "dnd") {
     return (
-      <div className="flex flex-col items-start justify-center text-xl font-semibold px-4 pl-3 pr-20 py-4 mt-5 text-white bg-red-500 rounded-lg">
+      <div className="flex flex-col items-start justify-center text-xl font-semibold pl-3  py-4 mt-5 text-white bg-red-500 rounded-lg">
         <h3>
           <span className="px-2">
             <DiscordLogo />
           </span>
-          {data?.discord_status}
+          {"Do Not Disturb"}
         </h3>
       </div>
+      
     );
   }
 
@@ -25,7 +27,7 @@ const DiscordStatus = () => {
           <span className="px-2">
             <DiscordLogo />
           </span>
-          {data?.discord_status}
+          {"Online"}
         </h3>
       </div>
     );
@@ -38,7 +40,7 @@ const DiscordStatus = () => {
           <span className="px-2">
             <DiscordLogo />
           </span>
-          {data?.discord_status}
+          {"Idle"}
         </h3>
       </div>
     );
@@ -51,7 +53,7 @@ const DiscordStatus = () => {
           <span className="px-2">
             <DiscordLogo />
           </span>
-          {data?.discord_status}
+          {"Offline"}
         </h3>
       </div>
     );
