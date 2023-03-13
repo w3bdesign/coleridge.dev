@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLanyard } from "use-lanyard";
 import Spotify from "@/components/Spotify";
 import DiscordStatus from "@/components/DiscordStatus";
 import Location from "@/components/Location";
 import Birthday from "@/components/Birthday";
-import Link from "next/link";
-import Aos from "aos";
 import {
   GitHubIcon,
   TwitterIcon,
@@ -26,10 +24,6 @@ import {
 } from "../Icons";
 
 export default function Home() {
-  useEffect(() => {
-    Aos.init({ duration: 300 });
-  }, []);
-
   const DISCORD_ID = "328282806327181322";
   const { data: user } = useLanyard(DISCORD_ID);
 
@@ -37,7 +31,7 @@ export default function Home() {
     <>
       <div data-aos="zoom-in">
         <main className="container mx-auto flex flex-col items-start justify-start max-w-3xl mt-5">
-          <div className="flex flex-col items-start justify-start leading-7 m-10 md:m-5">
+          <div className="flex flex-col items-start justify-start leading-7 m-5 md:m-5">
             <Spotify />
 
             <div className="flex w-full flex-col md:flex-col md:grid grid-cols-3 md:gap-1">

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "@/styles/design.css";
 import "aos/dist/aos.css";
 import Navbar from "@/components/Nav";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Aos from "aos";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    Aos.init({ duration: 300 });
+  }, []);
   return (
     <>
       <Navbar />
