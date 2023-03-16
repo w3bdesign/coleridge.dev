@@ -1,6 +1,4 @@
 import { GitHubIcon } from "@/Icons";
-import Aos from "aos";
-import { useEffect } from "react";
 
 const ProjectData = [
   {
@@ -27,10 +25,6 @@ const ProjectData = [
 ];
 
 export default function Projects() {
-  useEffect(() => {
-    Aos.init({ duration: 300 });
-  }, []);
-
   return (
     <div data-aos="zoom-in">
       <div className="container mx-auto flex flex-col items-start justify-start max-w-3xl">
