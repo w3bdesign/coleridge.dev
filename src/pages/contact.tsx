@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TimeComponent from "@/components/TimeComponent";
-import Aos from "aos";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -11,10 +10,7 @@ const Contact = () => {
   const emailRegex = new RegExp(
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   );
-  useEffect(() => {
-    Aos.init({ duration: 300 });
-  }, []);
-
+ 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const data = {
