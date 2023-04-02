@@ -18,4 +18,3 @@
 
 - Implement light mode
 - Develop about page
-- Add top loading bar animation
