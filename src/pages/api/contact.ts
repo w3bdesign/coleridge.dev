@@ -29,7 +29,7 @@ export default async (
       email: 'kai@coleridge.dev',
       name: 'Web Contact',
     },
-    subject: "New message from Contact Form",
+    subject: "New message",
     text: message,
     html: message.replace(/\r\n/g, "<br>")
   };
