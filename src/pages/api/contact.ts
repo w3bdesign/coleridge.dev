@@ -25,8 +25,10 @@ export default async (
 
   const data = {
     to: process.env.EMAIL_ID,
-    from: "kai@coleridge.dev",
-    name: "Website Contact",
+    from: {
+      email: 'kai@coleridge.dev',
+      name: 'Web Contact',
+    },
     subject: "New message from Contact Form",
     text: message,
     html: message.replace(/\r\n/g, "<br>")
