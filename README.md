@@ -13,8 +13,3 @@
 - Uses [TailWind CSS](https://tailwindcss.com/) to design the site.
 - Uses [SendGrid Twilio API](https://sendgrid.com/) to send contact form data relays it to my personal email.
 - Uses Apple Shortcuts to send iPhone Location data to API Endpoint to update KV, displays on site. 
-
-#### Upcoming changes:
-
-- Implement light mode
-- Develop about page
