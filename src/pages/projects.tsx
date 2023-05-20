@@ -26,8 +26,6 @@ const ProjectData = [
     id: 3,
     title: "AberX",
     description: "Discord Multi-Purpose academic bot for Aberystwyth University. Provides a Web App to manage and configure.",
-    private: "Repo is private"
-
   }
 ];
 
@@ -40,7 +38,7 @@ export default function Projects() {
           <div className="text-md line text-gray-400 mt-5">
             Here are a couple of projects I&apos;ve worked on and am currently working on. This list
             will be updated as I work on more projects.
-            {ProjectData.map(({ id, title, description, href, private }) => (
+            {ProjectData.map(({ id, title, description, href }) => (
               <div
                 className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 border-2 border-b-gray-400 rounded-lg transform transition duration-300 hover:scale-105"
                 key={id}
@@ -54,7 +52,6 @@ export default function Projects() {
                   className="text-indigo-500 mt-2 flex inline"
                 >
                   <GitHubIcon /> <span className="px-2 mb-1 font-bold">View on GitHub</span>
-                  <p>{private}</p>
                 </a>
               </div>
             ))}
