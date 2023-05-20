@@ -24,8 +24,8 @@ const ProjectData = [
   },
 {
     id: 3,
-    title: "DoIt",
-    description: "Academic Bot, for my dissertation",
+    title: "AberX",
+    description: "Multi-Purpose academic bot for university insitution. As part of my final year dissertation.",
   }
 ];
 
