@@ -25,7 +25,7 @@ const ProjectData = [
 {
     id: 3,
     title: "AberX",
-    description: "Multi-Purpose academic bot for university insitution. As part of my final year dissertation.",
+    description: "Discord Multi-Purpose academic bot for Aberystwyth University. Provides a Web App to manage and configure.",
   }
 ];
 
