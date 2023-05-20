@@ -26,6 +26,8 @@ const ProjectData = [
     id: 3,
     title: "AberX",
     description: "Discord Multi-Purpose academic bot for Aberystwyth University. Provides a Web App to manage and configure.",
+    private: "Repo is private"
+
   }
 ];
 
@@ -52,6 +54,7 @@ export default function Projects() {
                   className="text-indigo-500 mt-2 flex inline"
                 >
                   <GitHubIcon /> <span className="px-2 mb-1 font-bold">View on GitHub</span>
+                  <p>{private}</p>
                 </a>
               </div>
             ))}
