@@ -21,6 +21,11 @@ const ProjectData = [
     title: "DoIt",
     description: "An everyday task tracking app for iOS 📝",
     href: "https://github.com/kaicoleridge/DoIt"
+  },
+{
+    id: 3,
+    title: "DoIt",
+    description: "Academic Bot, for my dissertation",
   }
 ];
 
