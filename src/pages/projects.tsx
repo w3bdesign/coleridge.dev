@@ -36,8 +36,9 @@ export default function Projects() {
         <div className="flex flex-col items-start justify-start leading-7 m-10">
           <h1 className="md:text-5xl font-bold">Projects</h1>
           <div className="text-md line text-gray-400 mt-5">
-           Here you can find (some) of my past projects that I&apos;ve worked on/still working on. This page gets updated each time a new project is being worked on, 
-            or has been finished and is in production
+           Here you can find (some) of my past projects that I&apos;ve worked on/still working on. 
+            This page gets updated each time a new project is being worked on, 
+            or has been finished and is in production.
             {ProjectData.map(({ id, title, description, href }) => (
               <div
                 className="flex flex-col items-start justify-start text-md font-semibold px-5 py-4 mt-5 dark:bg-[#12181d]/60 border-2 border-b-gray-400 rounded-lg transform transition duration-300 hover:scale-105"
