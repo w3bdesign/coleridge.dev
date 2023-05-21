@@ -27,7 +27,7 @@ export default async (
     to: process.env.EMAIL_ID,
     from: {
       email: 'kai@coleridge.dev',
-      name: 'Web Contact',
+      name: 'Coleridge.dev',
     },
     subject: "New message",
     text: message,
