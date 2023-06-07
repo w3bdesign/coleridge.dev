@@ -26,6 +26,11 @@ const ProjectData = [
     id: 3,
     title: "AberX",
     description: "Discord Multi-Purpose academic bot for Aberystwyth University. Provides a Web App to manage and configure.",
+  },
+  {
+    id: 4,
+    title: "NewsPulse",
+    description: "A daily curated newsfeed. Coming soon to iOS",
   }
 ];
 
