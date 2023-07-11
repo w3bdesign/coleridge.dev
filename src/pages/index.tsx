@@ -65,7 +65,7 @@ export default function Home() {
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
               I&apos;m a <strong>{user?.kv.age}</strong> year old full stack developer and CS
-              student from the UK. I&apos;m currently working on a few upcoming projects which
+              Graduate from the UK. I&apos;m currently working on a few upcoming projects which
               I&apos;ll share soon. Other than coding I enjoy listening to music, watching films and
               travelling the world.
             </p>
