@@ -6,7 +6,6 @@ const CurrentStatus = () => {
   const [awake, setAwake] = useState<boolean>(true);
   
   function updateTime() {
-   //show uk time instead of local time
     let currentTime = new Date().toLocaleString("en-GB", { timeZone: "America/New_York" }).slice(12, 17);
     let ampm = currentTime >= "12:00" ? "pm" : "am";
     setTime(currentTime + ampm);
