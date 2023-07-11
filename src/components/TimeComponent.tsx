@@ -7,7 +7,7 @@ const CurrentStatus = () => {
   
   function updateTime() {
    //show uk time instead of local time
-    let currentTime = new Date().toLocaleString("en-GB", { timeZone: "Europe/London" }).slice(12, 17);
+    let currentTime = new Date().toLocaleString("en-GB", { timeZone: "America/New_York" }).slice(12, 17);
     let ampm = currentTime >= "12:00" ? "pm" : "am";
     setTime(currentTime + ampm);
     setTimeout(updateTime, 60 * 1000);
