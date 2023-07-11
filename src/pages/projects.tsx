@@ -16,19 +16,13 @@ const ProjectData = [
     href: "https://github.com/kaicoleridge/VecTor"
   },
 
-  {
-    id: 2,
-    title: "DoIt",
-    description: "An everyday task tracking app for iOS 📝",
-    href: "https://github.com/kaicoleridge/DoIt"
-  },
 {
-    id: 3,
+    id: 2,
     title: "AberX",
     description: "Discord Multi-Purpose academic bot for Aberystwyth University. Provides a Web App to manage and configure.",
   },
   {
-    id: 4,
+    id: 3,
     title: "NewsPulse",
     description: "A daily curated newsfeed. Coming soon to iOS",
   }
