@@ -60,7 +60,7 @@ export default function Home() {
             <h1 className="md:text-8xl text-4xl font-black md:mt-3 text-indigo-100">
               Hey I&apos;m,{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
-                Kai ツ
+                Kai.
               </span>
             </h1>
             <p className="text-md line text-gray-600 dark:text-gray-400 mt-5">
