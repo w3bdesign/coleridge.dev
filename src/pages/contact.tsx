@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="font-semibold text-slate-400 rounded-xl dark:bg-[#12181d]/60 w-full  mx-auto">
             <form>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="Name">Name<span className="text-red-500">*</span></label>
+                <label htmlFor="Name">Name</label>
                 <input
                   id="name"
                   type="text"
@@ -60,7 +60,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="email">Email<span className="text-red-500">*</span></label>
+                <label htmlFor="email">Email</label>
                 <input
                   id="email"
                   type="email"
@@ -72,7 +72,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="message">Message<span className="text-red-500">*</span></label>
+                <label htmlFor="message">Message</span></label>
                 <textarea
                   maxLength={1000}
                   value={message}
