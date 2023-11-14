@@ -72,7 +72,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start m-10 gap-3">
-                <label htmlFor="message">Message</span></label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   maxLength={1000}
                   value={message}
