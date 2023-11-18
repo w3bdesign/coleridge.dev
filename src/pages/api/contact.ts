@@ -27,9 +27,9 @@ export default async (
     to: process.env.EMAIL_ID,
     from: {
       email: 'kai@coleridge.dev',
-      name: 'Coleridge.dev',
+      name: 'Kai Coleridge',
     },
-    subject: "New message",
+    subject: "New Message",
     text: message,
     html: message.replace(/\r\n/g, "<br>")
   };
