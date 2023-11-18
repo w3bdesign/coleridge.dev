@@ -14,7 +14,7 @@ const CurrentStatus = () => {
   }
   useEffect(() => {
     updateTime();
-  }, 60000);
+  }, []);
 
   return (
     <p className="text-black/50 dark:text-white/50 text-md mt-2">
